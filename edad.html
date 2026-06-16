@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calcular Edad</title>
+
+    <!-- CONEXIÓN CSS -->
+    <link rel="stylesheet" href="edad.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Calcular Edad</h1>
+
+        <input type="date"
+               id="fechaNacimiento">
+
+        <br>
+
+        <button onclick="calcularEdad()">
+
+            Calcular Edad
+
+        </button>
+
+        <br>
+
+        <button class="volver"
+                onclick="volverCalculadora()">
+
+            Regresar a la Calculadora
+
+        </button>
+
+        <div id="edadResultado"></div>
+
+    </div>
+
+    <!-- CONEXIÓN JAVASCRIPT -->
+    <script src="edad.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    /* Fondo con un degradado oscuro y elegante en diagonal */
+    background: linear-gradient(135deg, #111827, #1f2937); 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #f3f4f6;
+}
+
+.contenedor {
+    /* Fondo estilo fibra de carbono o metal oscuro */
+    background: #111827; 
+    padding: 35px 30px; 
+    border-radius: 12px; /* Bordes más rectos y agresivos */
+    width: 100%;
+    max-width: 350px; 
+    text-align: center;
+    /* Doble sombra para darle profundidad sobre el fondo */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 
+                0 10px 10px -5px rgba(0, 0, 0, 0.4);
+    border: 1px solid #374151; /* Borde sutil para definir la estructura */
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Texto más espaciado y fuerte */
+    margin-top: 0;
+}
+
+input {
+    width: 100%; 
+    padding: 12px 14px;
+    margin-top: 15px;
+    border-radius: 6px;
+    /* Input oscuro integrado con el contenedor */
+    background-color: #1f2937; 
+    border: 2px solid #374151; 
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+}
+
+/* Enfoque del input con un destello naranja deportivo */
+input:focus {
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+}
+
+button {
+    width: 100%; /* Botón a lo ancho para un look más sólido */
+    margin-top: 20px;
+    padding: 14px 15px;
+    border: none;
+    border-radius: 6px;
+    /* Botón principal: Naranja potente */
+    background: #f97316;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #ea580c;
+    box-shadow: 0 4px 15px rgba(249, 115, 22, 0.35);
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Botón Volver: Un gris oscuro discreto pero elegante */
+.volver {
+    background: #4b5563;
+    margin-top: 12px; /* Espaciado extra si está debajo */
+}
+
+.volver:hover {
+    background: #374151;
+    box-shadow: 0 4px 15px rgba(75, 85, 99, 0.3);
+}
+
+#edadResultado {
+    margin-top: 25px;
+    padding: 12px;
+    /* Caja de resultado en color plano oscuro */
+    background-color: #1f2937;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #f97316; /* El texto resalta en el mismo naranja */
+    font-weight: 800;
+    border-bottom: 3px solid #f97316; /* Línea de acento abajo */
+    
+    /* Animación de entrada rápida */
+    animation: slideUp 0.25s ease-out;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}

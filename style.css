@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    /* Fondo oscuro sofisticado con un degradado muy sutil */
+    background: linear-gradient(135deg, #0f172a, #1e1b4b); 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #f8fafc;
+}
+
+.contenedor {
+    /* Fondo gris oscuro mate (estilo interfaz de videojuegos o apps tech) */
+    background: #1e293b; 
+    padding: 40px 30px; 
+    border-radius: 16px; /* Bordes un poco más rectos y limpios */
+    width: 100%;
+    max-width: 380px; 
+    /* Sombra intensa y un borde ultrafino brillante para dar relieve */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 1px solid #334155;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #f1f5f9; /* Blanco de alta visibilidad */
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase; /* Letras mayúsculas para más fuerza */
+    letter-spacing: 1px;
+}
+
+input {
+    width: 100%; 
+    padding: 14px 16px;
+    margin: 15px 0; 
+    border-radius: 8px;
+    /* Input oscuro que contrasta con el contenedor */
+    background-color: #0f172a; 
+    border: 2px solid #334155; 
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+/* Enfoque del input con un azul eléctrico potente */
+input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.25);
+}
+
+/* Contenedor para los botones */
+.flex-botones {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+button {
+    flex: 1; 
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    /* Botón principal: Azul Eléctrico */
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #1d4ed8;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+button:active {
+    transform: scale(0.98); /* Efecto de compresión al pulsar */
+}
+
+/* Segundo botón: Variante en Verde Neón / Cyber / Deportivo */
+.btnEdad {
+    background: #10b981;
+}
+
+.btnEdad:hover {
+    background: #059669;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+#resultado {
+    margin-top: 25px;
+    padding: 15px;
+    /* Caja de resultado oscura con borde de advertencia/destaque */
+    background-color: #0f172a; 
+    border-radius: 8px;
+    font-size: 18px;
+    color: #38bdf8; /* Texto azul claro brillante, muy legible */
+    font-weight: 700;
+    border-left: 4px solid #38bdf8; 
+    
+    /* Animación de impacto sutil */
+    animation: pulseIn 0.3s ease-out;
+}
+
+@keyframes pulseIn {
+    0% { transform: scale(0.95); opacity: 0; }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); opacity: 1; }
+}
